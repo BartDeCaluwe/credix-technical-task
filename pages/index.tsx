@@ -3,7 +3,27 @@ import { WalletDisconnectButton, WalletMultiButton } from '@solana/wallet-adapte
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import { useConnection, useWallet } from '@solana/wallet-adapter-react'
+import { useEffect, useState } from 'react'
+import { TOKEN_PROGRAM_ID } from '@solana/spl-token'
+
 const Home: NextPage = () => {
+    const { connection } = useConnection();
+    const [ tokenAccountsInfo, setTokenAccountsInfo ] = useState<any[]>()
+    const { publicKey } = useWallet()
+
+    useEffect(() => {
+        if (publicKey) {
+            connection.getParsedTokenAccountsByOwner(
+                publicKey,
+                {"programId": TOKEN_PROGRAM_ID},
+                ).then(res => {
+                const parsedTokenAccountsInfo = res.value.map(tokenAccount => tokenAccount.account.data.parsed.info)
+                setTokenAccountsInfo(parsedTokenAccountsInfo)
+            })
+        }
+    }, [publicKey, connection])
+
     return (
         <div className={styles.container}>
             <Head>
