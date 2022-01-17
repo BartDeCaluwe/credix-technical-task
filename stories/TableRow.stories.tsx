@@ -28,7 +28,9 @@ export const Default = Template.bind({})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Default.args = {
   children: [
-    <TableCell key="name">a55 Debenture Series-1</TableCell>,
+    <TableCell key="name" className="font-medium">
+      a55 Debenture Series-1
+    </TableCell>,
     <TableCell key="amount">0.22 USDC</TableCell>,
     <TableCell key="date">02.11.21</TableCell>,
     <TableCell key="progress"></TableCell>,
@@ -41,11 +43,13 @@ export const WithButton = Template.bind({})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 WithButton.args = {
   children: [
-    <TableCell key="name">a55 Debenture Series-1</TableCell>,
+    <TableCell key="name" className="font-medium">
+      a55 Debenture Series-1
+    </TableCell>,
     <TableCell key="amount">0.22 USDC</TableCell>,
     <TableCell key="date">02.11.21</TableCell>,
     <TableCell key="progress"></TableCell>,
-    <TableCell key="action">
+    <TableCell key="action" className="py-0">
       <Button label="Button" />
     </TableCell>,
   ],
@@ -56,12 +60,16 @@ export const WithProgressBar = Template.bind({})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 WithProgressBar.args = {
   children: [
-    <TableCell key="name">a55 Debenture Series-1</TableCell>,
+    <TableCell key="name" className="font-medium">
+      a55 Debenture Series-1
+    </TableCell>,
     <TableCell key="amount">0.22 USDC</TableCell>,
     <TableCell key="date">02.11.21</TableCell>,
     <TableCell key="progress">
       <ProgressBar value={50} />
     </TableCell>,
-    <TableCell key="action"></TableCell>,
+    <TableCell key="action" className="py-0">
+      <Button label="Button" />
+    </TableCell>,
   ],
 }
