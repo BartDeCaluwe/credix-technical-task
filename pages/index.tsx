@@ -40,7 +40,7 @@ const Home: NextPage = () => {
   const { connection } = useConnection()
   const [tokenAccountsInfo, setTokenAccountsInfo] =
     useState<TokenAccountInfo[]>()
-  const { publicKey } = useWallet()
+  const { publicKey, wallet } = useWallet()
   const [isActive, setIsActive] = useState(true)
 
   let tableMenuItems: TableMenuItem[] = [
@@ -90,7 +90,7 @@ const Home: NextPage = () => {
           <WalletMultiButton className="bg-white text-gray-900 hover:text-white" />
           <WalletDisconnectButton className="bg-white text-gray-900 hover:text-white" />
         </div>
-        <div>
+        <div className={wallet?.adapter.connected ? 'block' : 'hidden'}>
           <TableSwitch
             isActive={isActive}
             label="Investments"
