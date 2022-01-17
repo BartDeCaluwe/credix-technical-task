@@ -2,6 +2,7 @@ import { ReactNode } from 'react'
 
 interface TableCellProps {
   children?: ReactNode
+  align?: 'left' | 'right' | 'center'
 }
 
 export const TableCell = ({ children, ...props }: TableCellProps) => {
