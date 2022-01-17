@@ -9,7 +9,7 @@ export const TableSwitch = ({
   label,
   ...props
 }: TableSwitchProps) => {
-  const borderColor = isActive ? 'border-green-800' : 'border-white'
+  const borderColor = isActive ? 'border-teal-800' : 'border-white'
 
   return (
     <button
