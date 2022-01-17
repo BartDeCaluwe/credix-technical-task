@@ -12,7 +12,8 @@ export const TableSwitch = ({
   const borderColor = isActive ? 'border-green-800' : 'border-white'
 
   return (
-    <div
+    <button
+      type="button"
       className={[
         'bg-white px-6 py-4 w-32 min-w-min border-b-4 flex justify-center hover:cursor-pointer hover:bg-gray-50',
         borderColor,
@@ -20,6 +21,6 @@ export const TableSwitch = ({
       {...props}
     >
       {label}
-    </div>
+    </button>
   )
 }
