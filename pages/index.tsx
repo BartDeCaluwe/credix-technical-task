@@ -36,10 +36,6 @@ const Home: NextPage = () => {
       label: 'Date',
       icon: 'calendar',
     },
-    {
-      label: 'Action',
-      isInvisible: true,
-    },
   ]
 
   useEffect(() => {
@@ -91,9 +87,6 @@ const Home: NextPage = () => {
                       {accountInfo.tokenAmount.uiAmountString}
                     </TableCell>
                     <TableCell>2022-01-01</TableCell>
-                    <TableCell>
-                      <ProgressBar value={30} />
-                    </TableCell>
                   </TableRow>
                 )
               })}
