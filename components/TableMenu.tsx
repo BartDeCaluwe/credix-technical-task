@@ -32,24 +32,26 @@ interface TableMenuProps {
 export const TableMenu = ({ items, ...props }: TableMenuProps) => {
   return (
     <thead className="bg-white" {...props}>
-      {items.map(({ label, icon, isInvisible, align, ...itemProps }) => (
-        <th
-          key={`table-menu-${label}`}
-          className="px-6 py-4 text-md font-medium"
-          {...itemProps}
-        >
-          <div
-            className={[
-              'flex gap-1 items-center',
-              isInvisible ? 'invisible' : 'visible',
-              `justify-${align}`,
-            ].join(' ')}
+      <tr>
+        {items.map(({ label, icon, isInvisible, align, ...itemProps }) => (
+          <th
+            key={`table-menu-${label}`}
+            className="px-6 py-4 text-md font-medium"
+            {...itemProps}
           >
-            {icon && <Icon name={icon} width={4} height={4} />}
-            {label}
-          </div>
-        </th>
-      ))}
+            <div
+              className={[
+                'flex gap-1 items-center',
+                isInvisible ? 'invisible' : 'visible',
+                `justify-${align}`,
+              ].join(' ')}
+            >
+              {icon && <Icon name={icon} width={4} height={4} />}
+              {label}
+            </div>
+          </th>
+        ))}
+      </tr>
     </thead>
   )
 }
