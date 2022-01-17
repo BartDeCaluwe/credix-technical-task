@@ -24,7 +24,7 @@ const Home: NextPage = () => {
 
   let tableMenuItems: TableMenuItem[] = [
     {
-      label: 'Name',
+      label: 'Mint',
       icon: 'bar',
     },
     {
