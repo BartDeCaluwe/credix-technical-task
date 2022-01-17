@@ -4,9 +4,14 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
     './stories/**/*.{js,ts,jsx,tsx}',
   ],
-  options: {
-    safelist: [/^w-/, /^h-/],
-  },
+  safelist: [
+    {
+      pattern: /^w-/,
+    },
+    {
+      pattern: /^h-/,
+    },
+  ],
   theme: {
     extend: {},
   },
