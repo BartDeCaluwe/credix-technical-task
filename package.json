@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@solana/spl-token": "^0.1.8",
+    "@solana/spl-token-registry": "^0.2.1557",
     "@solana/wallet-adapter-base": "^0.9.1",
     "@solana/wallet-adapter-react": "^0.15.1",
     "@solana/wallet-adapter-react-ui": "^0.9.1",

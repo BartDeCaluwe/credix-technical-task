@@ -13,12 +13,33 @@ import { TableSwitch } from '../components/TableSwitch'
 import { TableMenu, TableMenuItem } from '../components/TableMenu'
 import { TableRow } from '../components/TableRow'
 import { TableCell } from '../components/TableCell'
-import { Button } from '../components/Button'
-import { ProgressBar } from '../components/ProgressBar'
+import { useTokenMetadata } from '../hooks/useTokenMetadata'
+
+interface TokenAccountInfo {
+  mint: string
+  tokenAmount: {
+    uiAmountString: string
+  }
+}
+
+const AccountInfoRow = ({ accountInfo }: { accountInfo: TokenAccountInfo }) => {
+  let metaData = useTokenMetadata(accountInfo.mint)
+
+  return (
+    <TableRow>
+      <TableCell>{accountInfo.mint}</TableCell>
+      <TableCell align="right">
+        {accountInfo.tokenAmount.uiAmountString}
+      </TableCell>
+      <TableCell>{metaData?.symbol}</TableCell>
+    </TableRow>
+  )
+}
 
 const Home: NextPage = () => {
   const { connection } = useConnection()
-  const [tokenAccountsInfo, setTokenAccountsInfo] = useState<any[]>()
+  const [tokenAccountsInfo, setTokenAccountsInfo] =
+    useState<TokenAccountInfo[]>()
   const { publicKey } = useWallet()
   const [isActive, setIsActive] = useState(true)
 
@@ -33,8 +54,7 @@ const Home: NextPage = () => {
       align: 'end',
     },
     {
-      label: 'Date',
-      icon: 'calendar',
+      label: 'Name',
     },
   ]
 
@@ -81,13 +101,10 @@ const Home: NextPage = () => {
             <tbody>
               {tokenAccountsInfo?.map((accountInfo) => {
                 return (
-                  <TableRow key={accountInfo.mint}>
-                    <TableCell>{accountInfo.mint}</TableCell>
-                    <TableCell align="right">
-                      {accountInfo.tokenAmount.uiAmountString}
-                    </TableCell>
-                    <TableCell>2022-01-01</TableCell>
-                  </TableRow>
+                  <AccountInfoRow
+                    key={accountInfo.mint}
+                    accountInfo={accountInfo}
+                  />
                 )
               })}
             </tbody>
