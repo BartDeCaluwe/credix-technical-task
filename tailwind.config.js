@@ -6,6 +6,9 @@ module.exports = {
   ],
   safelist: [
     {
+      pattern: /justify-(start|center|end)/,
+    },
+    {
       pattern: /^w-/,
     },
     {
