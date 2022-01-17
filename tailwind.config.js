@@ -117,7 +117,22 @@ module.exports = {
     },
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        mono: [
+          "'Jetbrains Mono'",
+          ...[
+            'ui-monospace',
+            'SFMono-Regular',
+            'Menlo',
+            'Monaco',
+            'Consolas',
+            'Liberation Mono',
+            'Courier New',
+          ],
+        ],
+      },
+    },
   },
   plugins: [],
 }
