@@ -1,12 +1,24 @@
 import { FC } from 'react'
 import { Icon } from './Icon'
 
-interface TableMenuItem {
+export interface TableMenuItem {
+  /**
+   * Table menu item contents
+   */
   label: string
+  /**
+   * Optional boolean to make the label invisible but still accessible for screen readers
+   */
   isInvisible?: boolean
+  /**
+   * Optional icon
+   */
   icon?: string
 }
 interface TableMenuProps {
+  /**
+   * Collection of menu items
+   */
   items: TableMenuItem[]
 }
 
