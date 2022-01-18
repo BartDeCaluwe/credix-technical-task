@@ -2,7 +2,7 @@ interface IconProps {
   /**
    * Name of the icon to be rendered
    */
-  name: string
+  name: 'bar' | 'calendar' | 'link'
 
   /**
    * Optional width of the icon
