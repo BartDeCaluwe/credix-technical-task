@@ -7,7 +7,6 @@ export default {
   title: 'Table/TableMenu',
   component: TableMenu,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {},
 } as ComponentMeta<typeof TableMenu>
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args

@@ -1,6 +1,17 @@
 interface IconProps {
+  /**
+   * Name of the icon to be rendered
+   */
   name: string
+
+  /**
+   * Optional width of the icon
+   */
   width?: number
+
+  /**
+   * Optional height of the icon
+   */
   height?: number
 }
 

@@ -1,8 +1,19 @@
 import { ReactNode } from 'react'
 
 interface TableCellProps {
+  /**
+   * Optional children to be rendered inside the component
+   */
   children?: ReactNode
+
+  /**
+   * Optional className to add or override classes
+   */
   className?: string
+
+  /**
+   * Optional table cell alignment specifier
+   */
   align?: 'left' | 'right' | 'center'
 }
 

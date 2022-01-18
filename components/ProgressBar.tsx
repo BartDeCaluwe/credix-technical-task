@@ -1,6 +1,9 @@
 import { useClamp } from '../hooks/useClamp'
 
 interface ProgressBarProps {
+  /**
+   * The actual progress value as a percentage between 0 and 100
+   */
   value: number
 }
 
@@ -8,7 +11,6 @@ export const ProgressBar = ({ value }: ProgressBarProps) => {
   const clamped = useClamp(value, 0, 100)
 
   return (
-    // w-[50%]
     <div>
       <div className="text-sm mb-1">{clamped}%</div>
       <div className="relative min-w-[100px]">

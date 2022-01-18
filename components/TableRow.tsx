@@ -1,6 +1,9 @@
 import { ReactNode } from 'react'
 
 interface TableRowProps {
+  /**
+   * Optional children to be rendered inside the component
+   */
   children?: ReactNode
 }
 

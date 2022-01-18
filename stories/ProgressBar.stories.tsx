@@ -8,7 +8,6 @@ export default {
   title: 'ProgressBar',
   component: ProgressBar,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {},
 } as ComponentMeta<typeof ProgressBar>
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args

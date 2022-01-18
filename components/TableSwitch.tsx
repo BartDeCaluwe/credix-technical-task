@@ -1,6 +1,17 @@
 interface TableSwitchProps {
+  /**
+   * Indicates that the current switch is the active one
+   */
   isActive: boolean
+
+  /**
+   * TableSwitch contents
+   */
   label: string
+
+  /**
+   * Optional onClick handler to control the actual switching
+   */
   onClick?: () => void
 }
 

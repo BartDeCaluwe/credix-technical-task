@@ -7,8 +7,6 @@ import { TableSwitch } from '../components/TableSwitch'
 export default {
   title: 'Table/TableSwitch',
   component: TableSwitch,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {},
 } as ComponentMeta<typeof TableSwitch>
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
