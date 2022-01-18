@@ -30,3 +30,11 @@ yarn storybook
 ```
 
 Open [http://localhost:6006](http://localhost:6006) with your browser to see the result.
+
+## Testing
+
+To run the test suite:
+
+```bash
+npx jest --watch
+```
