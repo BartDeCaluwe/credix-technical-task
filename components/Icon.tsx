@@ -1,8 +1,9 @@
+export type IconNames = 'bar' | 'calendar' | 'link'
 interface IconProps {
   /**
    * Name of the icon to be rendered
    */
-  name: 'bar' | 'calendar' | 'link'
+  name: IconNames
 
   /**
    * Optional width of the icon

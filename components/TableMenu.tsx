@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Icon } from './Icon'
+import { Icon, IconNames } from './Icon'
 
 export interface TableMenuItem {
   /**
@@ -15,7 +15,7 @@ export interface TableMenuItem {
   /**
    * Optional icon
    */
-  icon?: string
+  icon?: IconNames
 
   /**
    * Optional alignment specifier
