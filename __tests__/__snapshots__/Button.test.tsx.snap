@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button with label 1`] = `
+<button
+  className="px-6 py-2 bg-teal-700 text-white"
+  onClick={[MockFunction]}
+  type="button"
+>
+  button
+</button>
+`;
+
+exports[`Button with label 2`] = `
+<button
+  className="px-6 py-2 bg-teal-700 text-white"
+  onClick={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": undefined,
+        },
+      ],
+    }
+  }
+  type="button"
+>
+  button
+</button>
+`;

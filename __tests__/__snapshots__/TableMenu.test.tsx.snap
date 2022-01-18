@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableMenu renders menu items 1`] = `
+<thead
+  className="bg-white"
+>
+  <tr>
+    <th
+      className="px-6 py-4 text-md font-medium"
+    >
+      <div
+        className="flex gap-1 items-center visible justify-undefined"
+      >
+        Plain label
+      </div>
+    </th>
+    <th
+      className="px-6 py-4 text-md font-medium"
+    >
+      <div
+        className="flex gap-1 items-center visible justify-start"
+      >
+        Aligned to start
+      </div>
+    </th>
+    <th
+      className="px-6 py-4 text-md font-medium"
+    >
+      <div
+        className="flex gap-1 items-center visible justify-center"
+      >
+        Aligned to center
+      </div>
+    </th>
+    <th
+      className="px-6 py-4 text-md font-medium"
+    >
+      <div
+        className="flex gap-1 items-center visible justify-end"
+      >
+        Aligned to end
+      </div>
+    </th>
+    <th
+      className="px-6 py-4 text-md font-medium"
+    >
+      <div
+        className="flex gap-1 items-center visible justify-undefined"
+      >
+        <svg
+          className="w-4 h-4"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 8a1 1 0 0 0-1 1v11a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1z"
+          />
+          <path
+            d="M19 4a1 1 0 0 0-1 1v15a1 1 0 0 0 2 0V5a1 1 0 0 0-1-1z"
+          />
+          <path
+            d="M5 12a1 1 0 0 0-1 1v7a1 1 0 0 0 2 0v-7a1 1 0 0 0-1-1z"
+          />
+        </svg>
+        With bar icon
+      </div>
+    </th>
+    <th
+      className="px-6 py-4 text-md font-medium"
+    >
+      <div
+        className="flex gap-1 items-center invisible justify-undefined"
+      >
+        Invisible
+      </div>
+    </th>
+  </tr>
+</thead>
+`;

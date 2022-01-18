@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableRow has a min width 1`] = `
+<button
+  className="bg-white px-6 py-4 w-32 min-w-min border-b-4 flex justify-center hover:cursor-pointer hover:bg-gray-50 border-white"
+  type="button"
+>
+  T
+</button>
+`;
+
+exports[`TableRow renders active state 1`] = `
+<button
+  className="bg-white px-6 py-4 w-32 min-w-min border-b-4 flex justify-center hover:cursor-pointer hover:bg-gray-50 border-teal-800"
+  type="button"
+>
+  Table switch
+</button>
+`;
+
+exports[`TableRow renders inactive state 1`] = `
+<button
+  className="bg-white px-6 py-4 w-32 min-w-min border-b-4 flex justify-center hover:cursor-pointer hover:bg-gray-50 border-white"
+  type="button"
+>
+  Table switch
+</button>
+`;

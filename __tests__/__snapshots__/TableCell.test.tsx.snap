@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableCell accepts className 1`] = `
+<td
+  className="px-6 py-4 bg-red-500"
+>
+  <div>
+    TEST DIV
+  </div>
+</td>
+`;
+
+exports[`TableCell aligns center 1`] = `
+<td
+  align="center"
+  className="px-6 py-4 "
+>
+  <div>
+    TEST DIV
+  </div>
+</td>
+`;
+
+exports[`TableCell aligns left 1`] = `
+<td
+  align="left"
+  className="px-6 py-4 "
+>
+  <div>
+    TEST DIV
+  </div>
+</td>
+`;
+
+exports[`TableCell aligns right 1`] = `
+<td
+  align="right"
+  className="px-6 py-4 "
+>
+  <div>
+    TEST DIV
+  </div>
+</td>
+`;
+
+exports[`TableCell renders children 1`] = `
+<td
+  className="px-6 py-4 "
+>
+  <div>
+    TEST DIV
+  </div>
+</td>
+`;

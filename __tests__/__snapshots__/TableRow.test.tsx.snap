@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableRow renders TableCells 1`] = `
+<tr
+  className="bg-white"
+>
+  <td
+    className="px-6 py-4 "
+  >
+    Cell 1
+  </td>
+  <td
+    className="px-6 py-4 "
+  >
+    Cell 2
+  </td>
+  <td
+    className="px-6 py-4 "
+  >
+    Cell 3
+  </td>
+</tr>
+`;
